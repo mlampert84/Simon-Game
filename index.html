@@ -1,0 +1,51 @@
+<head>
+  <title>Simon Game</title>
+  <link rel="stylesheet" href=css/style.css/>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<div id="game-and-instructions">
+<div class="simon-circle">
+  <div class="white-margin-control"></div>
+  <div class="simon-control-panel">
+    <h1>Simon</h1>
+    <div class="first-row-control-buttons">
+      <div class="control-button"><div id="count-panel"></div><br/>Count</div>
+      <div class="control-button" id="start">
+        <div class="round-button" id="start-button"></div><br/>Start
+      </div>
+      <div class="control-button round-button" id="strict">
+        <div id="strict-indicator-light"></div>
+        <div id="strict-button" class="round-button"></div><br/>Strict
+      </div>
+    </div>
+    <div class="on-off-control"><span>Off</span>
+      <div class="on-off-switch">
+        <input id="toggle-switch" type="checkbox">
+        <label for="toggle-switch"></label>
+      </div>
+
+      <span>On</span></div>
+  </div>
+<div class="quadrants first-quadrant" id="button1">
+</div>
+<div class="quadrants second-quadrant" id="button2">
+</div>
+<div class="quadrants third-quadrant"
+     id="button3">
+</div>
+<div class=" quadrants fourth-quadrant" id="button4">
+</div>
+
+</div>
+<h3>Instructions: To press the buttons, either click with the mouse or use the arrow keys: &larr;, &uarr;, &rarr;, &darr;. The machine must be on for the buttons to respond.</h3>
+
+</div>
+
+<script src='js/script.js'></script>
+</body>
